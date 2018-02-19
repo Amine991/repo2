@@ -1,0 +1,12 @@
+﻿<!-- Normal Full Page Menu -->
+<top-menu class="layout-topmenu"></top-menu>
+<!-- Mobile Small Popup Menu -->
+<side-menu class="layout-sidemenu"></side-menu>
+<!-- Login control -->
+<p-dialog header="Login" [(visible)]="LoginDialogVisibility" modal="modal" width="300" [responsive]="true">
+    <login-dialog></login-dialog>
+</p-dialog>
+<!-- Register control -->
+<p-dialog header="Register" [(visible)]="RegisterDialogVisibility" modal="modal" height="360" width="300" [responsive]="true">
+    <register-dialog></register-dialog>
+</p-dialog>

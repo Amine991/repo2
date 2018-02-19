@@ -1,0 +1,7 @@
+﻿<div *ngIf='user.isLoggedIn' class="ui-auth-div">
+    <b>Hello</b>, {{user.userName}} <button pButton label="Logout" (click)="LogOut()" icon="fa-sign-out" class="ui-button-secondary"></button>
+</div>
+<div *ngIf='!user.isLoggedIn' class="ui-auth-div">
+    <button pButton type="button" label="Register" (click)="showRegister()"></button>
+    <button pButton type="button" label="Log In" (click)="showLogIn()" class="ui-button-success"></button>    
+</div>

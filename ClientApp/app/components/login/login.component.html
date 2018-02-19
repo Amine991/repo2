@@ -1,0 +1,20 @@
+﻿<div class="spinner" *ngIf='showWaitGraphic'>
+    <div class="rect1"></div>
+    <div class="rect2"></div>
+    <div class="rect3"></div>
+    <div class="rect4"></div>
+    <div class="rect5"></div>
+</div>
+<div *ngIf='!isMigrateMode'>
+    <div *ngIf='!showWaitGraphic'>
+        <form [formGroup]="loginForm" (ngSubmit)="logIn($event)">
+            <input formControlName="username" pInputText size="30"
+                   type="text" placeholder="Your Username">
+            <br /><br />
+            <input formControlName="password" pInputText size="30"
+                   type="password" placeholder="Your password">
+            <br /><br />
+            <button pButton type="submit" label="Log In" class="ui-button-success" style="float: right;"></button>
+        </form>
+    </div>
+</div>
